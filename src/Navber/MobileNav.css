@@ -1,0 +1,91 @@
+:root {
+  --navBG: rgb(87, 0, 168);
+}
+.mobileNavber {
+  background-color: var(--navBG);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.mobileNavber .div1 img {
+  width: 60px;
+}
+.mobileNavber .div1 {
+  width: 100%;
+}
+.mobileNavber .navLink {
+  background-color: rgb(67, 1, 129);
+  margin-left: 10px;
+  margin-bottom: -10px;
+  padding: 20px;
+  width: 100%;
+}
+.mobileNavber .div1 .navLinks {
+  display: block;
+  background-color: rgb(67, 1, 129);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  width: 200%;
+  border-top: 10px solid var(--navBG);
+}
+.mobileNavber .navLinksHide {
+  display: none;
+  transition: 1s;
+}
+.mobileNavber .div1 span {
+  color: white;
+}
+.mobileNavber .div2 {
+  width: max-content;
+  height: max-content;
+}
+.mobileNavber .NavLink {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 4px;
+}
+.mobileNavber .NavLink:hover {
+  box-shadow: 0 0 5px whitesmoke;
+  background-color: rgb(101, 9, 187);
+}
+.mobileNavber .div2 .MenuToggle {
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 1px solid whitesmoke;
+  box-shadow: none;
+  background-color: var(--navBG);
+}
+.mobileNavber .div2 .MenuToggleHide {
+  display: none;
+}
+.mobileNavber .div2 .MenuToggle span {
+  background-color: white;
+}
+
+.mobileNavber .div2 .navClose {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0 15px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.mobileNavber .div2 .navCloseHide {
+  display: none;
+}
+/*  */ /*  */
+/*  */ /*  */
+@media screen and (min-width: 901px) {
+  .mobileNavber {
+    display: none;
+  }
+}
