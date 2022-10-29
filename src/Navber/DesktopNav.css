@@ -1,5 +1,5 @@
 :root {
-  --navBG: rgb(87, 0, 168);
+  --navBG: rgb(92, 0, 179);
 }
 .desktopNavber {
   background-color: var(--navBG);
@@ -9,7 +9,7 @@
   width: 100%;
 }
 .desktopNavber .div1 img {
-  width: 60px;
+  width: 80px;
 }
 .desktopNavber .div1 {
   width: 100%;
@@ -25,6 +25,7 @@
 }
 .desktopNavber .div1 .navLinks {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .desktopNavber .div1 span {
@@ -35,10 +36,14 @@
   text-decoration: none;
   cursor: pointer;
   padding: 10px 20px;
-  border: 1px solid rgb(121, 121, 121);
+  border: 1px solid rgb(156, 156, 156);
   border-radius: 4px;
 }
 .desktopNavber .NavLink:hover {
+  box-shadow: 0 0 5px whitesmoke;
+  background-color: rgb(101, 9, 187);
+}
+.desktopNavber .NavLink:focus {
   box-shadow: 0 0 5px whitesmoke;
   background-color: rgb(101, 9, 187);
 }

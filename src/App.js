@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navber from "./Navber";
 import AboutRoute from "./Routes/About";
+import HomeRoute from "./Routes/Home";
 
 function App() {
   return (
@@ -10,10 +11,7 @@ function App() {
         <BrowserRouter>
           <Navber />
           <Routes>
-            <Route
-              path="/"
-              element={<p style={{ margin: "100px 0 0 50px" }}>Home Page</p>}
-            />
+            <Route path="/" element={<HomeRoute />} />
             <Route path="/about" element={<AboutRoute />} />
             <Route path="/mywork" element={<>My Work Page</>} />
             <Route path="/gallery" element={<>Gallery Page</>} />

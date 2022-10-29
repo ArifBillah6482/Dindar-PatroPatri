@@ -1,44 +1,39 @@
 import "./DesktopNav.css";
 import { NavLink } from "react-router-dom";
+import Logo from "./Logo.png";
 
 export default function DesktopNavber() {
   return (
     <div className="desktopNavber">
       <div className="div1">
         <div>
-          <img src="./favicon.ico" alt="Logo" />
+          <img src={Logo} alt="Logo" />
         </div>
         {/*  */}
         <div className="navLinks">
           <div className="navLink">
             <NavLink to="/" className="NavLink">
-              <span>Home</span>
+              <span>হোম</span>
             </NavLink>
           </div>
           <div className="navLink">
             <NavLink to="/about" className="NavLink">
-              <span> About</span>
+              <span> আমাদের সম্পর্কে</span>
             </NavLink>
           </div>
           <div className="navLink">
             <NavLink to="/mywork" className="NavLink">
-              <span>My Work</span>
+              <span>প্রশ্ন ও উত্তর</span>
             </NavLink>
           </div>
           <div className="navLink">
             <NavLink to="/gallery" className="NavLink">
-              <span>Gallery</span>
+              <span>ভিডিও</span>
             </NavLink>
           </div>
           <div className="navLink">
             <NavLink to="/contact" className="NavLink">
-              <span>Contact Us</span>
-            </NavLink>
-          </div>
-          <div className="navLink">
-            <NavLink to="/help" className="NavLink">
-              {" "}
-              <span> Help</span>
+              <span>যোগাযোগ করুন </span>
             </NavLink>
           </div>
         </div>
