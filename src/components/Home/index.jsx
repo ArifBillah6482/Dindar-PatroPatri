@@ -59,8 +59,9 @@ export default function Home() {
                   <option value="খুলনা">খুলনা</option>
                   <option value="বরিশাল">বরিশাল</option>
                   <option value="রংপুর">রংপুর</option>
-                  <option value="যশোর">যশোর</option>
-                  <option value="যশোর">সিলেট</option>
+                  <option value="রাজশাহী">রাজশাহী</option>
+                  <option value="সিলেট">সিলেট</option>
+                  <option value="ময়মনসিংহ">ময়মনসিংহ</option>
                 </select>
               </div>
             </label>
@@ -68,6 +69,7 @@ export default function Home() {
           </div>
           {/*  */}
           <button
+            type="submit"
             className="AnimatedBtnPurple"
             style={{
               padding: "10px 30px",

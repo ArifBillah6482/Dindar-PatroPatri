@@ -82,13 +82,23 @@
     justify-content: center;
     flex-direction: column;
   }
+  .HomePage .div2 form .AnimatedBtnPurple {
+    margin-left: 35px;
+  }
   .HomePage .div2 form .allLabel label {
     width: 280px;
+    margin-left: 30px;
   }
 }
 @media screen and (max-width: 300px) {
   .HomePage .div1 p {
     font-size: 40px;
+  }
+  .HomePage .div2 form .allLabel label {
+    margin-left: 0;
+  }
+  .HomePage .div2 form .AnimatedBtnPurple {
+    margin-left: 5px;
   }
   .HomePage .div2 form {
     width: 300px;
