@@ -2,7 +2,7 @@
   --navBG: rgb(92, 0, 179);
 }
 .desktopNavber {
-  background-color: var(--navBG);
+  background: linear-gradient(to right, purple, blueviolet);
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
