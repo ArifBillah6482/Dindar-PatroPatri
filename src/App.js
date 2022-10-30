@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navber from "./Navber";
-import AboutRoute from "./Routes/About";
 import HomeRoute from "./Routes/Home";
+import AllBiodataRoute from "./Routes/AllBiodata";
 
 function App() {
   return (
@@ -12,11 +12,8 @@ function App() {
           <Navber />
           <Routes>
             <Route path="/" element={<HomeRoute />} />
-            <Route path="/about" element={<AboutRoute />} />
-            <Route path="/mywork" element={<>My Work Page</>} />
-            <Route path="/gallery" element={<>Gallery Page</>} />
+            <Route path="/allBiodata" element={<AllBiodataRoute />} />
             <Route path="/contact" element={<>Contact Page</>} />
-            <Route path="/help" element={<>Help Page</>} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -17,19 +17,17 @@ export default function DesktopNavber() {
             </NavLink>
           </div>
           <div className="navLink">
-            <NavLink to="/about" className="NavLink">
-              <span> আমাদের সম্পর্কে</span>
+            <NavLink to="/allBiodata" className="NavLink">
+              <span>সমস্ত বায়োডাটা</span>
             </NavLink>
           </div>
           <div className="navLink">
-            <NavLink to="/mywork" className="NavLink">
-              <span>প্রশ্ন ও উত্তর</span>
-            </NavLink>
-          </div>
-          <div className="navLink">
-            <NavLink to="/gallery" className="NavLink">
-              <span>ভিডিও</span>
-            </NavLink>
+            <a
+              className="NavLink"
+              href="https://dindar-patropatri-form.netlify.app/"
+            >
+              <span>বায়োডাটা তৈরি করুন</span>
+            </a>
           </div>
           <div className="navLink">
             <NavLink to="/contact" className="NavLink">

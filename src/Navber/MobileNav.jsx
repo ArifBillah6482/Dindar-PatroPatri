@@ -23,30 +23,21 @@ export default function MobileNavber() {
           </div>
           <div className="navLink">
             <NavLink
-              to="/about"
+              to="/allBiodata"
               className="NavLink"
               onClick={() => setNavToggle(true)}
             >
-              <span>আমাদের সম্পর্কে</span>
+              <span>সমস্ত বায়োডাটা</span>
             </NavLink>
           </div>
           <div className="navLink">
-            <NavLink
-              to="/mywork"
+            <a
               className="NavLink"
+              href="https://dindar-patropatri-form.netlify.app/"
               onClick={() => setNavToggle(true)}
             >
-              <span>প্রশ্ন ও উত্তর</span>
-            </NavLink>
-          </div>
-          <div className="navLink">
-            <NavLink
-              to="/gallery"
-              className="NavLink"
-              onClick={() => setNavToggle(true)}
-            >
-              <span>ভিডিও</span>
-            </NavLink>
+              <span>বায়োডাটা তৈরি করুন</span>
+            </a>
           </div>
           <div className="navLink">
             <NavLink
@@ -57,16 +48,6 @@ export default function MobileNavber() {
               <span>যোগাযোগ করুন</span>
             </NavLink>
           </div>
-          {/* <div className="navLink">
-            <NavLink
-              to="/help"
-              className="NavLink"
-              onClick={() => setNavToggle(true)}
-            >
-              {" "}
-              <span> Help</span>
-            </NavLink>
-          </div> */}
         </div>
       </div>
       {/*  */}
