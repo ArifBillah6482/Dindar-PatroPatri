@@ -6,8 +6,6 @@ import AllBiodataRoute from "./Routes/AllBiodata";
 import AdminRoute from "./Routes/Admin";
 
 function App() {
-    console.log(process.env.REACT_APP_DB_URL1)
-  console.log(process.env.REACT_APP_DB_URL2)
   return (
     <div className="App">
       <div>
