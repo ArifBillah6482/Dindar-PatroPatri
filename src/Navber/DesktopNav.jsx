@@ -34,6 +34,11 @@ export default function DesktopNavber() {
               <span>যোগাযোগ করুন </span>
             </NavLink>
           </div>
+          <div className="navLink">
+            <NavLink to="/admin" className="NavLink">
+              <span>এডমিন লগিন</span>
+            </NavLink>
+          </div>
         </div>
       </div>
     </div>

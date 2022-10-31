@@ -48,6 +48,15 @@ export default function MobileNavber() {
               <span>যোগাযোগ করুন</span>
             </NavLink>
           </div>
+          <div className="navLink">
+            <NavLink
+              to="/admin"
+              className="NavLink"
+              onClick={() => setNavToggle(true)}
+            >
+              <span>এডমিন লগিন</span>
+            </NavLink>
+          </div>
         </div>
       </div>
       {/*  */}
