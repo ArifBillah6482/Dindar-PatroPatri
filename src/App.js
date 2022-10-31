@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navber from "./Navber";
 import HomeRoute from "./Routes/Home";
 import AllBiodataRoute from "./Routes/AllBiodata";
+import AdminRoute from "./Routes/Admin";
 
 function App() {
     console.log(process.env.REACT_APP_DB_URL1)
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<HomeRoute />} />
             <Route path="/allBiodata" element={<AllBiodataRoute />} />
             <Route path="/contact" element={<>Contact Page</>} />
+            <Route path="/admin" element={<AdminRoute />} />
           </Routes>
         </BrowserRouter>
       </div>
