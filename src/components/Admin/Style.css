@@ -8,6 +8,9 @@
 .admin_biodata_card .approveBtn {
   margin-right: 10px;
 }
+.admin_biodata_card p {
+  margin-bottom: 5px;
+}
 .admin_biodata_card .editBtn {
   margin-right: 10px;
 }
