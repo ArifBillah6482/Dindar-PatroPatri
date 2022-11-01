@@ -85,6 +85,88 @@ export default function Home() {
         </form>
       </div>
       {/*  */}
+      {/*  */}
+      <div
+        className="div3"
+        style={{
+          marginTop: "50px",
+          marginBottom: "10px",
+          width: "100%",
+          textAlign: "center",
+          padding: "10px",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <a
+            style={{
+              padding: "30px",
+              background: "linear-gradient(to right, blueviolet, purple)",
+              width: "max-content",
+              fontSize: "40px",
+              color: "white",
+              fontFamily: "SolaimanLipi",
+              borderRadius: "5px",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+            href="https://dindar-patropatri-form.netlify.app"
+          >
+            আপনার বায়োডাটা তৈরি করুন
+          </a>
+        </div>
+      </div>
+      {/*  */}
+      {/*  */}
+      <div
+        className="div5"
+        style={{
+          marginTop: "100px",
+          background: "linear-gradient(to right, blueviolet, purple, darkblue)",
+          padding: "20px",
+          textAlign: "center",
+          width: "100%",
+        }}
+      >
+        <footer style={{ color: "white" }}>
+          <p
+            style={{
+              padding: "10px 0",
+              fontSize: "18px",
+              fontFamily: "consolas",
+            }}
+          >
+            Copyright <span style={{ fontSize: "20px" }}>©</span> 2022. All
+            Rights Reserved.
+          </p>
+          <span
+            style={{
+              padding: "10px 0",
+              fontSize: "18px",
+              fontFamily: "consolas",
+            }}
+          >
+            {" "}
+            Developer:-
+          </span>{" "}
+          <span>
+            <a
+              style={{
+                color: "white",
+                fontSize: "18px",
+                fontFamily: "consolas",
+              }}
+              href="https://facebook.com/arifbillah64"
+            >
+              Arif Billah
+            </a>
+          </span>
+        </footer>
+      </div>
     </div>
   );
 }
