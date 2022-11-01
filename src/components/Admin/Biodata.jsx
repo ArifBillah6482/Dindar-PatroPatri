@@ -36,7 +36,12 @@ export default function Biodata(props) {
   } = props.data;
   return (
     <div>
-      <div className="admin_biodata_card" style={{ border: "1px solid blue" }}>
+      <div
+        className="admin_biodata_card"
+        style={{
+          border: "1px solid blue",
+        }}
+      >
         <p className="id">ফরম আইডিঃ {id}</p>
         <p>Time: {Time}</p>
         <p style={{ color: "purple", fontSize: "18px" }}>নামঃ {নাম}</p>
@@ -83,6 +88,7 @@ export default function Biodata(props) {
         {/*  */}
         <button
           className="BtnPurple approveBtn"
+          style={{ width: "max-content" }}
           onClick={() => {
             function a(callback) {
               fetch(
@@ -92,7 +98,40 @@ export default function Biodata(props) {
                   headers: {
                     "Content-Type": "application/json",
                   },
-                  body: JSON.stringify({ Time: 12345 }),
+                  body: JSON.stringify({
+                    id,
+                    Time,
+                    পাত্র_পাত্রী,
+                    নাম,
+                    বয়স,
+                    উচ্চতা,
+                    ওজন,
+                    গায়ের_রং,
+                    বৈবাহিক_অবস্থা,
+                    বিভাগ,
+                    বর্তমানঠিকানা,
+                    স্হায়ী_ঠিকানা,
+                    পেশা,
+                    মাসিকইনকাম,
+                    শিক্ষাগতযোগ্যতা,
+                    বাবারপেশা,
+                    মায়েরপেশা,
+                    আপনিকি_নিওমিত_নামাজপড়েন,
+                    আপনিকি_কুরআান_পড়তে_যানেন,
+                    আপনিকি_সন্তানআছে_এমন_কাউকে_বিবাহকরতেচান,
+                    আপনারকিশারিরিকঅঙ্গহানিবাবড়োকোনোরোগআছে,
+                    আপনারকিসুন্নতিদারিআছে,
+                    আপনিকিপর্দাকরেন,
+                    দ্বিনদারপাত্রপাত্রীসন্ধানপেজেআপনিকিধরনেরজীবনসঙ্গীচান,
+                    পাএপাএীবয়স,
+                    পাত্রপাত্রীউচ্চতা,
+                    পাত্রপাত্রীগায়েররং,
+                    পাএপাএীলেখাপড়া,
+                    এস্ট্রাকিছু,
+                    মোবাইল,
+                    এফবিআইডিলিংক,
+                    আমাদেরসেবা,
+                  }),
                 }
               )
                 .then(() => {})
@@ -110,7 +149,40 @@ export default function Biodata(props) {
                   headers: {
                     "Content-Type": "application/json",
                   },
-                  body: JSON.stringify({ Time: 12345 }),
+                  body: JSON.stringify({
+                    id,
+                    Time,
+                    পাত্র_পাত্রী,
+                    নাম,
+                    বয়স,
+                    উচ্চতা,
+                    ওজন,
+                    গায়ের_রং,
+                    বৈবাহিক_অবস্থা,
+                    বিভাগ,
+                    বর্তমানঠিকানা,
+                    স্হায়ী_ঠিকানা,
+                    পেশা,
+                    মাসিকইনকাম,
+                    শিক্ষাগতযোগ্যতা,
+                    বাবারপেশা,
+                    মায়েরপেশা,
+                    আপনিকি_নিওমিত_নামাজপড়েন,
+                    আপনিকি_কুরআান_পড়তে_যানেন,
+                    আপনিকি_সন্তানআছে_এমন_কাউকে_বিবাহকরতেচান,
+                    আপনারকিশারিরিকঅঙ্গহানিবাবড়োকোনোরোগআছে,
+                    আপনারকিসুন্নতিদারিআছে,
+                    আপনিকিপর্দাকরেন,
+                    দ্বিনদারপাত্রপাত্রীসন্ধানপেজেআপনিকিধরনেরজীবনসঙ্গীচান,
+                    পাএপাএীবয়স,
+                    পাত্রপাত্রীউচ্চতা,
+                    পাত্রপাত্রীগায়েররং,
+                    পাএপাএীলেখাপড়া,
+                    এস্ট্রাকিছু,
+                    মোবাইল,
+                    এফবিআইডিলিংক,
+                    আমাদেরসেবা,
+                  }),
                 }
               )
                 .then(() => {})
@@ -120,6 +192,15 @@ export default function Biodata(props) {
                 .catch((error) => {
                   console.error("Error:", error);
                 });
+              //////////////////
+              fetch(
+                `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata/${id}.json`,
+                {
+                  method: "DELETE",
+                }
+              )
+                .then(() => {})
+                .catch((err) => console.log(err));
               /////////////////////////
               callback();
             }
