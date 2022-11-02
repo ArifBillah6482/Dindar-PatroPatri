@@ -26,7 +26,10 @@ export default function AllBiodataRoute() {
       >
         {loading ? <>Loading...</> : console.log()}
       </h1>
-      {allData && <AllBiodata allData={allData} />}
+      {allData && <AllBiodata allData={allData} />}      
+     <div>      
+        <Footer />
+      </div>
     </div>
   );
 }
