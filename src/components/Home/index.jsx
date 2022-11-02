@@ -1,4 +1,5 @@
 import BG from "../../Images/BG1.jpg";
+import Footer from "../Footer";
 import "./Style.css";
 export default function Home() {
   return (
@@ -122,51 +123,7 @@ export default function Home() {
       </div>
       {/*  */}
       {/*  */}
-      <div
-        className="div5"
-        style={{
-          marginTop: "100px",
-          background: "linear-gradient(to right, blueviolet, purple, darkblue)",
-          padding: "20px",
-          textAlign: "center",
-          width: "100%",
-        }}
-      >
-        <footer style={{ color: "white" }}>
-          <p
-            style={{
-              padding: "10px 0",
-              fontSize: "18px",
-              fontFamily: "consolas",
-            }}
-          >
-            Copyright <span style={{ fontSize: "20px" }}>©</span> 2022. All
-            Rights Reserved.
-          </p>
-          <span
-            style={{
-              padding: "10px 0",
-              fontSize: "18px",
-              fontFamily: "consolas",
-            }}
-          >
-            {" "}
-            Developer:-
-          </span>{" "}
-          <span>
-            <a
-              style={{
-                color: "white",
-                fontSize: "18px",
-                fontFamily: "consolas",
-              }}
-              href="https://facebook.com/arifbillah64"
-            >
-              Arif Billah
-            </a>
-          </span>
-        </footer>
-      </div>
+      <Footer />
     </div>
   );
 }
