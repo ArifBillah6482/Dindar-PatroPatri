@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import AllBiodata from "../components/AllBiodata";
+import Footer from "../components/Footer";
+
 
 export default function AllBiodataRoute() {
   const [allData, setAllData] = useState([]);
