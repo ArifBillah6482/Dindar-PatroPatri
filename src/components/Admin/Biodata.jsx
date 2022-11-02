@@ -213,6 +213,29 @@ export default function Biodata(props) {
         >
           Approve
         </button>
+
+ <button
+          className="BtnRed"
+          onClick={() => {
+            const confrm = window.confirm(
+              "Are you sure to delete this biodata?"
+            );
+            if (confrm) {
+              fetch(
+                `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata/${id}.json`,
+                {
+                  method: "DELETE",
+                }
+              )
+                .then(() => alert("Sucess"))
+                .catch((err) => alert(err));
+            } else {
+              console.log();
+            }
+          }}
+        >
+          Delete
+        </button>
       </div>
     </div>
   );
