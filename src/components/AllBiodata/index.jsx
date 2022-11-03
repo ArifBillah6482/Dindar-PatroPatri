@@ -31,7 +31,7 @@ export default function AllBiodata(props) {
                 fontSize: "18px",
               }}
             >
-              আপনার কোনো বায়োডাটা ফছন্দ হলে{" "}
+              আপনার কোনো বায়োডাটা পছন্দ হলে{" "}
               <span
                 style={{
                   fontSize: "20px",
