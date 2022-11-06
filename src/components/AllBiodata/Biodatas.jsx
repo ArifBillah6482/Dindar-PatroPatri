@@ -3,6 +3,7 @@ export default function Biodatas(props) {
   const {
     id,
     নাম,
+    পাত্র_পাত্রী,
     বয়স,
     বৈবাহিক_অবস্থা,
     বিভাগ,
@@ -22,12 +23,33 @@ export default function Biodatas(props) {
           <div className="biodataCard">
             <div
               style={{
-                width: "100%",
                 textAlign: "center",
                 marginBottom: "20px",
               }}
             >
               <img src={titleImg} alt="" />
+            </div>
+            <div>
+              <h3
+                style={{
+                  color: "white",
+                  textDecoration: "underline",
+                  textAlign: "center",
+                  fontWeight: "normal",
+                  textUnderlineOffset: "5px",
+                  marginBottom: "20px",
+                  padding: "10px 15px",
+                  borderRadius: "10px",
+                  boxShadow: "0 0 5px  white",
+                  borderBottom: "1px solid white",
+                }}
+              >
+                {পাত্র_পাত্রী === "পাত্র" ? (
+                  <span>পাত্রীর বায়োডাটা</span>
+                ) : (
+                  <span>পাত্রর বায়োডাটা</span>
+                )}
+              </h3>
             </div>
             <div className="cardBodyLine cardBodyLineId">
               <p className="p1">
