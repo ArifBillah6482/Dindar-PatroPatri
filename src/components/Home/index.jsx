@@ -43,7 +43,7 @@ export default function Home() {
           // eslint-disable-next-line
           datas.map((data) => {
             if (
-              data.পাত্র_পাত্রী === amiKhujsi &&
+              data.পাত্র_পাত্রী !== amiKhujsi &&
               data.বৈবাহিক_অবস্থা === boibahikObostha &&
               data.বিভাগ === bivag
             ) {
