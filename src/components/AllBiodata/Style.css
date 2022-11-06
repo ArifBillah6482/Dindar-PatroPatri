@@ -20,7 +20,6 @@
 .allBiodata .div1 .biodataCard .cardBodyLine {
   display: flex;
   flex-direction: row;
-  gap: 10px;
   color: whitesmoke;
   border: 1px solid rgb(94, 94, 94);
   margin: 5px 0;
