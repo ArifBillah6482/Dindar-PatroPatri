@@ -16,7 +16,7 @@ export default function Biodatas(props) {
     দ্বিনদারপাত্রপাত্রীসন্ধানপেজেআপনিকিধরনেরজীবনসঙ্গীচান,
   } = props.data;
   return (
-    <div style={{}}>
+    <div style={{ margin: "0 15px" }}>
       <div className="allBiodata">
         <div className="div1">
           <div className="biodataCard">
