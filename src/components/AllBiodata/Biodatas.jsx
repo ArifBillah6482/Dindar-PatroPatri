@@ -42,6 +42,8 @@ export default function Biodatas(props) {
                   borderRadius: "10px",
                   boxShadow: "0 0 5px  white",
                   borderBottom: "1px solid white",
+                  fontSize: "20px",
+                  textShadow: "0 0 5px black",
                 }}
               >
                 {পাত্র_পাত্রী === "পাত্র" ? (
