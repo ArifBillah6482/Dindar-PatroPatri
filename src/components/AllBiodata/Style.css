@@ -1,16 +1,19 @@
+.allBiodata {
+  width: 390px;
+  margin-left: -30px;
+}
 .allBiodata .div1 {
   background: linear-gradient(to right, purple, blueviolet, blue);
   margin: 15px;
   border-radius: 5px;
   box-shadow: 0 0 20px blueviolet;
-  width: 400px;
+  width: 100%;
 }
 .allBiodata .div1:hover {
   box-shadow: 0 0 20px blue;
 }
 .allBiodata .div1 .biodataCard {
-  margin: 20px;
-  padding: 10px;
+  padding: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -48,4 +51,25 @@
 .allBiodata .div1 .biodataCard .cardBodyLine .p3 {
   padding: 10px;
   border-left: 1px solid whitesmoke;
+}
+/*  */
+@media screen and (min-width: 450px) {
+  .allBiodata {
+    margin: 15px 0;
+  }
+}
+/*  */
+@media screen and (max-width: 400px) {
+  .search_all_data_main_div {
+    gap: 15px;
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 401px) {
+  .all_biodata_main_div {
+    gap: 25px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  }
 }
