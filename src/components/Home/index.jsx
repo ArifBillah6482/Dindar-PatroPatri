@@ -4,6 +4,7 @@ import "./Style.css";
 import React, { useState } from "react";
 import { useRef } from "react";
 import SearchAllData from "./SearchAllData";
+import { NavLink } from "react-router-dom";
 //
 let arryData = [];
 
@@ -152,12 +153,71 @@ export default function Home() {
         <p> </p>
       )}
       {/*  */}
+      {s === null ? (
+        console.log("")
+      ) : (
+        <div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <div
+              style={{
+                background: " linear-gradient(to right, blueviolet, blue)",
+                padding: "20px 0",
+                width: "395px",
+                textAlign: "center",
+                boxShadow: "0 0 5px blue",
+                marginBottom: "20px",
+                borderRadius: "10px",
+              }}
+            >
+              <p
+                style={{
+                  color: "whitesmoke",
+                  fontSize: "18px",
+                }}
+              >
+                আপনার কোনো বায়োডাটা পছন্দ হলে{" "}
+                <span
+                  style={{
+                    fontSize: "20px",
+                    color: "white",
+                    padding: "0 5px",
+                    display: "inline-block",
+                  }}
+                >
+                  “ফরম আইডি”
+                </span>{" "}
+                কপি করে আমাদের ফেসবুক পেইজে মেসেজ দিন।
+              </p>{" "}
+              <br />
+              <a
+                href="https://www.facebook.com/DeendarPatraPatriPandhan"
+                style={{
+                  color: "white",
+                  textUnderlineOffset: "5px",
+                  padding: "12px 15px",
+                  border: "1px solid rgb(116, 116, 116)",
+                  borderRadius: "5px",
+                }}
+              >
+                আামদের পেইজে যেতে এখানে ক্লিক করুন
+              </a>
+            </div>{" "}
+          </div>
+        </div>
+      )}
       {s === null ? console.log("") : <SearchAllData datass={s} />}
       {/*  */}
       <div
         className="div3"
         style={{
-          marginTop: "50px",
+          marginTop: "40px",
           marginBottom: "10px",
           width: "100%",
           textAlign: "center",
@@ -175,7 +235,7 @@ export default function Home() {
               padding: "30px",
               background: "linear-gradient(to right, blueviolet, purple)",
               width: "max-content",
-              fontSize: "30px",
+              fontSize: "25px",
               color: "white",
               fontFamily: "SolaimanLipi",
               borderRadius: "5px",
@@ -186,6 +246,41 @@ export default function Home() {
           >
             আপনার বায়োডাটা তৈরি করুন
           </a>
+        </div>
+      </div>
+      <div
+        className="div3"
+        style={{
+          marginTop: "20px",
+          marginBottom: "10px",
+          width: "100%",
+          textAlign: "center",
+          padding: "10px",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <NavLink
+            to="allBiodata/"
+            style={{
+              padding: "30px",
+              background: "linear-gradient(to right, blueviolet, purple)",
+              width: "max-content",
+              fontSize: "25px",
+              color: "white",
+              fontFamily: "SolaimanLipi",
+              borderRadius: "5px",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+          >
+            {" "}
+            সমস্ত বায়োডাটা দেখুন
+          </NavLink>
         </div>
       </div>
       {/*  */}
