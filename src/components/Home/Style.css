@@ -62,6 +62,32 @@
   background-color: rgb(60, 25, 92);
   color: white;
 }
+/*  */
+/*  */
+
+.SearchBiodata .div_1 .biodataCard .cardBodyLine {
+  display: flex;
+  margin: 5px;
+  flex-direction: row;
+  padding: 7px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.SearchBiodata .div_1 .biodataCard .cardBodyLineId {
+  border: 1px solid aqua;
+  text-decoration: underline;
+}
+.SearchBiodata .div_1 .biodataCard {
+  background: linear-gradient(to right, purple, blueviolet);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px blue;
+}
+.fake {
+  display: grid;
+  grid-template-columns: repeat(auto) minmax(390px);
+}
 /*  */ /*  */
 /*  */ /*  */
 @media screen and (max-width: 900px) {
@@ -96,5 +122,19 @@
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .search_all_data_main_div {
+    gap: 15px;
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 401px) {
+  .search_all_data_main_div {
+    gap: 25px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
   }
 }
