@@ -80,10 +80,10 @@ export default function AllBiodata(props) {
       {/*  */}
       <div
         style={{
-          display: "grid",
+          display: "flex",
           justifyContent: "center",
+          flexWrap: "wrap",
         }}
-        className="all_biodata_main_div"
       >
         {props.allData.map((data) => {
           return <Biodatas data={data} key={Math.random()} />;
