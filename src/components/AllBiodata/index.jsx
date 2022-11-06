@@ -6,7 +6,6 @@ export default function AllBiodata(props) {
       <div>
         <div
           style={{
-            width: "100%",
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
@@ -81,10 +80,10 @@ export default function AllBiodata(props) {
       {/*  */}
       <div
         style={{
-          display: "flex",
+          display: "grid",
           justifyContent: "center",
-          flexWrap: "wrap",
         }}
+        className="all_biodata_main_div"
       >
         {props.allData.map((data) => {
           return <Biodatas data={data} key={Math.random()} />;
