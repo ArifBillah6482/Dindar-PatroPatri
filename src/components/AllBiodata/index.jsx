@@ -41,11 +41,11 @@ export default function AllBiodata(props) {
               >
                 “ফরম আইডি”
               </span>{" "}
-              কপি করে আমাদের পেইজে মেসেজ দিন।
+              কপি করে আমাদের ফেসবুক পেইজে মেসেজ দিন।
             </p>{" "}
             <br />
             <a
-              href="/"
+              href="https://www.facebook.com/DeendarPatraPatriPandhan"
               style={{
                 color: "white",
                 textUnderlineOffset: "5px",
