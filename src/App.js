@@ -4,7 +4,8 @@ import Navber from "./Navber";
 import HomeRoute from "./Routes/Home";
 import AllBiodataRoute from "./Routes/AllBiodata";
 import AdminRoute from "./Routes/Admin";
-
+import ContactRoute from "./Routes/Contact";
+//
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomeRoute />} />
             <Route path="/allBiodata" element={<AllBiodataRoute />} />
-            <Route path="/contact" element={<>Contact Page</>} />
+            <Route path="/contact" element={<ContactRoute />} />
             <Route path="/admin" element={<AdminRoute />} />
           </Routes>
         </BrowserRouter>
