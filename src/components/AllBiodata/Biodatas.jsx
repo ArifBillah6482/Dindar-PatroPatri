@@ -1,7 +1,7 @@
 import titleImg from "./Logo.png";
 export default function Biodatas(props) {
   const {
-    id,
+    idNum,
     নাম,
     পাত্র_পাত্রী,
     বয়স,
@@ -55,7 +55,7 @@ export default function Biodatas(props) {
             </div>
             <div className="cardBodyLine cardBodyLineId">
               <p className="p1">
-                ফরম আইডিঃ- <span> {id}</span>
+                ফরম আইডিঃ- <span> {idNum}</span>
               </p>
             </div>
             {/*  */}
