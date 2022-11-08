@@ -3,6 +3,7 @@ import titleImg from "./Logo.png";
 export default function SearchData(props) {
   const {
     id,
+    idNum,
     নাম,
     বয়স,
     বৈবাহিক_অবস্থা,
@@ -32,7 +33,7 @@ export default function SearchData(props) {
             </div>
             <div className="cardBodyLine cardBodyLineId">
               <p className="p1">
-                ফরম আইডিঃ- <span> {id}</span>
+                ফরম আইডিঃ- <span> {idNum}</span>
               </p>
             </div>
             {/*  */}
