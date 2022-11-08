@@ -2,7 +2,6 @@ import "./Style.css";
 import titleImg from "./Logo.png";
 export default function SearchData(props) {
   const {
-    id,
     idNum,
     নাম,
     বয়স,
