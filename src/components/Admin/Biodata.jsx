@@ -90,6 +90,7 @@ export default function Biodata(props) {
           className="BtnPurple approveBtn"
           style={{ width: "max-content" }}
           onClick={() => {
+            const idNum = prompt("Enter ID: ");
             function a(callback) {
               fetch(
                 `https://dindar-patro-patri-default-rtdb.firebaseio.com/AllBiodata.json/`,
@@ -100,6 +101,7 @@ export default function Biodata(props) {
                   },
                   body: JSON.stringify({
                     id,
+                    idNum: idNum,
                     Time,
                     পাত্র_পাত্রী,
                     নাম,
@@ -151,6 +153,7 @@ export default function Biodata(props) {
                   },
                   body: JSON.stringify({
                     id,
+                    idNum: idNum,
                     Time,
                     পাত্র_পাত্রী,
                     নাম,
@@ -214,7 +217,7 @@ export default function Biodata(props) {
           Approve
         </button>
 
- <button
+        <button
           className="BtnRed"
           onClick={() => {
             const confrm = window.confirm(
