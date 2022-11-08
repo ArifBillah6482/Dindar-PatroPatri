@@ -197,13 +197,41 @@ export default function Biodata(props) {
                 });
               //////////////////
               fetch(
-                `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata/${id}.json`,
-                {
-                  method: "DELETE",
-                }
+                "https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata.json"
               )
-                .then(() => {})
-                .catch((err) => console.log(err));
+                .then((res) => res.json())
+                .then((respone) => {
+                  function a(callback) {
+                    const datas = [];
+                    for (let key in respone) {
+                      datas.unshift({ ...respone[key] });
+                      // eslint-disable-next-line
+                      datas.map((data) => {
+                        if (data.id === id) {
+                          let fileName1 = data.নাম.split(/\W/g);
+                          let fileName2 = data.মোবাইল.split(/\D/g);
+                          let fileName = fileName1 + "" + fileName2;
+                          fetch(
+                            `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata/${fileName}.json`,
+                            {
+                              method: "DELETE",
+                            }
+                          )
+                            .then(() => console.log("Success."))
+                            .catch(() => alert("Error"));
+                        } else {
+                        }
+                      });
+                    }
+                    //
+                    callback();
+                  }
+                  function b() {
+                    console.log("Sucess");
+                  }
+                  a(() => b());
+                  // /////////
+                });
               /////////////////////////
               callback();
             }
@@ -225,13 +253,41 @@ export default function Biodata(props) {
             );
             if (confrm) {
               fetch(
-                `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata/${id}.json`,
-                {
-                  method: "DELETE",
-                }
+                "https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata.json"
               )
-                .then(() => alert("Sucess"))
-                .catch((err) => alert(err));
+                .then((res) => res.json())
+                .then((respone) => {
+                  function a(callback) {
+                    const datas = [];
+                    for (let key in respone) {
+                      datas.unshift({ ...respone[key] });
+                      // eslint-disable-next-line
+                      datas.map((data) => {
+                        if (data.id === id) {
+                          let fileName1 = data.নাম.split(/\W/g);
+                          let fileName2 = data.মোবাইল.split(/\D/g);
+                          let fileName = fileName1 + "" + fileName2;
+                          fetch(
+                            `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata/${fileName}.json`,
+                            {
+                              method: "DELETE",
+                            }
+                          )
+                            .then(() => console.log("Success."))
+                            .catch(() => alert("Error"));
+                        } else {
+                        }
+                      });
+                    }
+                    //
+                    callback();
+                  }
+                  function b() {
+                    console.log("Sucess");
+                  }
+                  a(() => b());
+                  // /////////
+                });
             } else {
               console.log();
             }
