@@ -248,6 +248,44 @@ export default function Home() {
           </a>
         </div>
       </div>
+
+ <div
+        className="div3"
+        style={{
+          marginTop: "20px",
+          marginBottom: "10px",
+          width: "100%",
+          textAlign: "center",
+          padding: "10px",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <p
+            to="allBiodata/"
+            style={{
+              padding: "20px",
+              background: "linear-gradient(to right, blueviolet, purple)",
+              width: "max-content",
+              fontSize: "20px",
+              color: "white",
+              fontFamily: "SolaimanLipi",
+              borderRadius: "5px",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+          >
+            {" "}
+            বায়োডাটা ফরম পূরণ করে এপ্রুভ করাতে আমাদের ফেসবুক পেইজে মেসেজ দিন।
+          </p>
+        </div>
+      </div>
+
+
       <div
         className="div3"
         style={{
