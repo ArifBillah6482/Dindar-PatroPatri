@@ -271,12 +271,10 @@ export default function Home() {
               padding: "20px",
               background: "linear-gradient(to right, blueviolet, purple)",
               width: "max-content",
-              fontSize: "20px",
+              fontSize: "22px",
               color: "white",
               fontFamily: "SolaimanLipi",
               borderRadius: "5px",
-              textDecoration: "underline",
-              cursor: "pointer",
             }}
           >
             {" "}
