@@ -78,7 +78,7 @@ export default function SearchData(props) {
             {/*  */}
             <div className="cardBodyLine">
               <p className="p1">শারিরিক অঙ্গহানীঃ-</p>
-              <p className="p2">{আপনারকিশারিরিকঅঙ্গহানিবাবড়োকোনোরোগআছে}ই </p>
+              <p className="p2">{আপনারকিশারিরিকঅঙ্গহানিবাবড়োকোনোরোগআছে} </p>
             </div>
             {/*  */}
             <div className="cardBodyLine">
