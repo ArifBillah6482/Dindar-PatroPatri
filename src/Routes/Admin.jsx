@@ -1,7 +1,7 @@
 import Admin from "../components/Admin";
 
 function AdminRoute() {
-     const pass = prompt("");
+     const pass = prompt("Enter your eight digit password: ");
     if (pass === "s") {
   return (
     <div>
@@ -9,9 +9,9 @@ function AdminRoute() {
     </div>
   );
     } else if (pass !== "s") {
-   return <>এখানে কোনো তথ্য নেই।</>;
+   return <p style={{color: 'red', margin: '20px'}}>পাসওয়ার্ড ভুল!</p>;
  } else {
-    return <>এখানে কোনো তথ্য নেই।</>;
+    return <p style={{color: 'red', margin: '20px'}}>পাসওয়ার্ড ভুল!</p>;
     }
 }
 export default AdminRoute;
