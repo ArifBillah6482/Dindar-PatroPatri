@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import AllBiodata from "../components/AllBiodata";
 import Footer from "../components/Footer";
 
-
+// "https://dindar-patro-patri-default-rtdb.firebaseio.com/AllBiodata.json"
 export default function AllBiodataRoute() {
   const [allData, setAllData] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch(
-      "https://dindar-patro-patri-default-rtdb.firebaseio.com/AllBiodata.json"
+      process.env.REACT_APP_ALL_B
     )
       .then((res) => res.json())
       .then((res) => {
