@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import AllData from "./AllData";
-//  `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata.json`
+
 export default function Admin() {
   // eslint-disable-next-line
 
