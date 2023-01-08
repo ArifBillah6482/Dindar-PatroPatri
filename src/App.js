@@ -6,6 +6,7 @@ import AllBiodataRoute from "./Routes/AllBiodata";
 import AdminRoute from "./Routes/Admin";
 import ContactRoute from "./Routes/Contact";
 //
+//
 function App() {
   return (
     <div className="App">
