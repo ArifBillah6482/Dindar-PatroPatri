@@ -254,7 +254,7 @@ export default function Biodata(props) {
             );
             if (confrm) {
               fetch(
-                "https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata.json"
+                process.env.REACT_APP_ADMIN_API
               )
                 .then((res) => res.json())
                 .then((respone) => {
@@ -269,7 +269,7 @@ export default function Biodata(props) {
                           let fileName2 = data.মোবাইল.split(/\D/g);
                           let fileName = fileName1 + "" + fileName2;
                           fetch(
-                            `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata/${fileName}.json`,
+                            `${process.env.REACT_APP_ADMIN_API}/${fileName}.json`,
                             {
                               method: "DELETE",
                             }
