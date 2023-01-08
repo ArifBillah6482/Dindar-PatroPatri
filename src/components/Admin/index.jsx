@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import AllData from "./AllData";
-
+//  `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata.json`
 export default function Admin() {
   // eslint-disable-next-line
 
@@ -8,7 +8,7 @@ export default function Admin() {
 
   useEffect(() => {
     fetch(
-      `https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata.json`
+     process.env.REACT_APP_ADMIN_API
     )
       .then((res) => res.json())
       .then((res) => {
