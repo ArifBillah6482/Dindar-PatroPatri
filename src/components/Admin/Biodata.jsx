@@ -94,7 +94,7 @@ export default function Biodata(props) {
             function a(callback) {
 //               `https://dindar-patro-patri-default-rtdb.firebaseio.com/AllBiodata.json/`,
               fetch(
-                process.env.REACT_APP_ALL_B
+                process.env.REACT_APP_ALL_B,
                 {
                   method: "POST", // or 'PUT'
                   headers: {
@@ -146,7 +146,7 @@ export default function Biodata(props) {
                 });
               /////////////////////////
               fetch(
-                `https://sifatullah-web-default-rtdb.firebaseio.com/AllBiodata.json/`,
+                 process.env.REACT_APP_ALL_B,
                 {
                   method: "POST", // or 'PUT'
                   headers: {
