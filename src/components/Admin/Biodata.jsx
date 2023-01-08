@@ -198,7 +198,7 @@ export default function Biodata(props) {
                 });
               //////////////////
               fetch(
-                "https://dindar-patro-patri-default-rtdb.firebaseio.com/PendingBiodata.json"
+                process.env.REACT_APP_ADMIN_API
               )
                 .then((res) => res.json())
                 .then((respone) => {
