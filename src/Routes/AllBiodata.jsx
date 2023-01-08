@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import AllBiodata from "../components/AllBiodata";
 import Footer from "../components/Footer";
 
-// "https://dindar-patro-patri-default-rtdb.firebaseio.com/AllBiodata.json"
 export default function AllBiodataRoute() {
   const [allData, setAllData] = useState([]);
   const [loading, setLoading] = useState(true);
