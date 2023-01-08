@@ -92,8 +92,9 @@ export default function Biodata(props) {
           onClick={() => {
             const idNum = prompt("Enter ID: ");
             function a(callback) {
+//               `https://dindar-patro-patri-default-rtdb.firebaseio.com/AllBiodata.json/`,
               fetch(
-                `https://dindar-patro-patri-default-rtdb.firebaseio.com/AllBiodata.json/`,
+                process.env.REACT_APP_ALL_B
                 {
                   method: "POST", // or 'PUT'
                   headers: {
