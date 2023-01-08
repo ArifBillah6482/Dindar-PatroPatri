@@ -30,9 +30,9 @@ export default function Home() {
 
       //////////
       // setSerchState(arryData);
-
+// "https://dindar-patro-patri-default-rtdb.firebaseio.com/AllBiodata.json"
       fetch(
-        "https://dindar-patro-patri-default-rtdb.firebaseio.com/AllBiodata.json"
+        process.env.REACT_APP_ALL_B
       )
         .then((res) => res.json())
         .then((res) => {
