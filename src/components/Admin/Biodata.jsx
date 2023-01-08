@@ -146,7 +146,7 @@ export default function Biodata(props) {
                 });
               /////////////////////////
               fetch(
-                 process.env.REACT_APP_ALL_B,
+                 process.env.REACT_APP_ALL_B_2,
                 {
                   method: "POST", // or 'PUT'
                   headers: {
