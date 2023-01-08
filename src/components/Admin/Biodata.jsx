@@ -213,7 +213,7 @@ export default function Biodata(props) {
                           let fileName2 = data.মোবাইল.split(/\D/g);
                           let fileName = fileName1 + "" + fileName2;
                           fetch(
-                            `${process.env.REACT_APP_ADMIN_API}/${fileName}.json`,
+                            `${process.env.REACT_APP_DLT1}/${fileName}.json`,
                             {
                               method: "DELETE",
                             }
@@ -269,7 +269,7 @@ export default function Biodata(props) {
                           let fileName2 = data.মোবাইল.split(/\D/g);
                           let fileName = fileName1 + "" + fileName2;
                           fetch(
-                            `${process.env.REACT_APP_ADMIN_API}/${fileName}.json`,
+                            `${process.env.REACT_APP_DLT1}/${fileName}.json`,
                             {
                               method: "DELETE",
                             }
